@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">Helpmate</string>
+    <string name="list_course">Cursos</string>
+    <string name="menu_settings">Configuraciones</string>
+    <string name="color">Color</string>
+    <string name="about">Acerca De</string>
+    <string name="ok">OK</string>
+    <string name="delete">Borrar</string>
+
+    <string name="coursename">Nombre del Curso</string>
+    <string name="coursecolor">Color</string>
+    <string name="time_start">Inicio</string>
+    <string name="time_end">Final</string>
+    <string name="clear">Reset</string>
+
+    <string name="monday">Lunes</string>
+    <string name="tuesday">Martes</string>
+    <string name="wednesday">Miercoles</string>
+    <string name="thursday">Jueves</string>
+    <string name="friday">Viernes</string>
+    <string name="saturday">Sabado</string>
+    <string name="sunday">Domingo</string>
+
+    <string name="title">Titulo</string>
+    <string name="description">Descripcion</string>
+    <string name="date">Fecha</string>
+    <string name="repeat">Repeticion</string>
+    <string name="insert_assignment">Ingresar Tarea</string>
+    <string name="priority">Prioridad</string>
+    <string name="emptyAssignmentFields">Debe ingresar valores para Titulo y Fecha</string>
+
+    <string name="monClick">Monday is Clicked</string>
+    <string name="tueClick">Tuesday is Clicked</string>
+    <string name="wedClick">Wednesday is Clicked</string>
+    <string name="thuClick">Thursday is Clicked</string>
+    <string name="friClick">Friday is Clicked</string>
+    <string name="satClick">Saturday is Clicked</string>
+    <string name="sunClick">Sunday is Clicked</string>
+
+    <string name="emptyName">El campo Nombre no puede ser vacio</string>
+    <string name='emptyScheduleFields'>Los Dias que elija deben tener ambas horas</string>
+
+    <string name="insert_course">Nuevo Curso</string>
+    <string name="notebook">Cuadernos</string>
+    <string name="home">Home</string>
+    <string name="assingments">Tareas</string>
+    <string name="schedule">Horarios</string>
+    <string name="schedule_time">Hora de Inicio</string>
+    <string name="cuur_day">Dia Actual</string>
+
+
+    <string name="image_button">Image Button</string>
+    <string name="title_activity_cuaderno">Cuaderno</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="add_note">Hoja</string>
+    <string name="action_delete_note">Borrar Hoja</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_text_format">Formato del Texto</string>
+    <string name="action_done">Guardar</string>
+    <string name="action_toggle_keyboard">Mostrar Teclado</string>
+    <string name="action_voice">Entrada de Voz</string>
+    <string name="action_share">Compartir</string>
+    <string name="hint_write_note">&#032;&#032;&#032;&#032;&#032;&#032;&#032;&#032;&#032;&#032;&#032;&#032;&#032;&#032;&#032;&#032;&#032;&#032;&#032;&#032;&#032;&#032;Escriba aqui&#8230;</string>
+    <string name="action_delete_all">Borrar todas las hojas</string>
+    <string name="test">Prueba</string>
+    <string name="voice_hint">Hable ahora</string>
+
+    <string name="eraseAll">Borrar Todo</string>
+    <string name="brush">Lapicero</string>
+    <string name="erase">Borrar</string>
+    <string name="paint">Pintura</string>
+    <string name="action_draw">Escribir</string>
+
+    <!-- Used in MainActivity.java -->
+    <string name="search_hint">Buscar hojas…</string>
+    <string name="confirmation">Esta seguro?</string>
+    <string name="close_app">Cerrar Aplicacion</string>
+    <string name="delete_note_number">Borrar hoja #%d</string>
+    <string name="note_deleted">Hoja #%d borrada</string>
+    <string name="delete_notes_title">Borrar todas las hojas</string>
+    <string name="delete_notes_success">Todas las hojas han sido borradas del cuaderno!</string>
+    <string name="choose_activity">Seleccione la acción para la hoja #%d</string>
+
+    <!-- Used in NoteActivity.java -->
+    <string name="save_note_title">Guardar hoja</string>
+    <string name="save_note_confirmation">¿Desea guardar los cambios?</string>
+
+    <!-- Used in NoteAdapter.java -->
+    <string name="note_number">Hoja N° %d</string>
+    <string name="note_has_no_text">La hoja esta vacía.</string>
+
+
+    <!-- Shared between MainActivity.java & NoteActivity.java -->
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">Cancelar</string>
+
+    <!-- Used in SaveOrUpdateNoteTask.java -->
+    <string name="toast_note_created">Hoja creada</string>
+    <string name="toast_note_updated">Hoja modificada</string>
+    <string name="last_updated">Último cambio</string>
+
+    <!-- Used in content_draw_panel.xml -->
+    <string name="draw_options">Opciones para Escribir:</string>
+    <string name="brush_color">Colores del Lapicero:</string>
+    <string name="brush_size">Tamaño del Lapicero:</string>
+
+    <!-- Used in content_text_format.xml -->
+    <string name="text_color">Color del Texto:</string>
+    <string name="style">Estilo:</string>
+
+    <string name="label_cancel">Cancelar</string>
+    <string name="label_email">Enviar texto por correo</string>
+    <string name="label_preview">Ver archivo PDF</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

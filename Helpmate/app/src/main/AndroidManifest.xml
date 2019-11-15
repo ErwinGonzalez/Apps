@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.galileo.cc6.helpmate">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <!-- Permission to Send SMS -->
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.ListCourseActivity"
+            android:label = "@string/list_course"
+            android:theme="@style/VerdeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.COURSE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.InsertCourse"
+            android:label = "@string/insert_course"
+            android:theme="@style/VerdeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.INSERTCOURSE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.ListScheduleActivity"
+            android:label = "@string/schedule"
+            android:theme="@style/AmarilloTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SCHEDULE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.InsertAssignment"
+            android:label = "@string/assingments"
+            android:theme="@style/RojoTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_ASSIGMENT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.AssigmentActivity"
+            android:label = "@string/assingments"
+            android:theme="@style/RojoTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.ASSIGMENT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.ConfigurationActivity"
+            android:label = "@string/menu_settings"
+            android:theme="@style/NegroTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.CONFIG" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.Hojas"></activity>
+
+        <activity
+            android:name=".activities.HojasCuaderno"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.WRITE" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.NoteActivity"
+            android:label="@string/add_note"
+            android:screenOrientation="locked">
+            </activity>
+        <receiver android:name=".activities.AlertReceiver" android:process=".remote"/>
+    </application>
+
+</manifest>

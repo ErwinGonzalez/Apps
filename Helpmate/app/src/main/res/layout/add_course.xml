@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:gravity="center">
+
+
+        <TextView
+            android:text="@string/list_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="21dp"
+            android:id="@+id/Course"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/coursename"
+            android:ems="10"
+            android:id="@+id/CourseName"
+            android:layout_below="@+id/Course"
+            android:layout_alignLeft="@+id/Course"
+            android:layout_alignStart="@+id/Course" />
+
+        <TextView
+            android:text="@string/color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CourseName"
+            android:layout_alignLeft="@+id/CourseName"
+            android:layout_alignStart="@+id/CourseName"
+            android:id="@+id/Colour" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/color_spinner"
+            android:layout_below="@+id/Colour"
+            android:layout_alignLeft="@+id/Colour"
+            android:layout_alignStart="@+id/Colour" />
+
+
+        <CheckBox
+            android:text="@string/monday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:id="@+id/mon_checkbox"
+            android:layout_below="@+id/color_spinner"
+            android:layout_alignLeft="@+id/color_spinner"
+            android:layout_alignStart="@+id/color_spinner"
+            />
+
+        <CheckBox
+            android:text="@string/tuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tue_checkbox"
+            android:layout_below="@+id/mon_checkbox"
+            android:layout_alignLeft="@+id/mon_checkbox"
+            android:layout_alignStart="@+id/mon_checkbox"
+            android:layout_marginTop="11dp"
+            />
+
+        <CheckBox
+            android:text="@string/friday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fri_checkbox"
+            android:layout_alignBottom="@+id/fri_text_start"
+            android:layout_alignLeft="@+id/thu_checkbox"
+            android:layout_alignStart="@+id/thu_checkbox"
+            />
+
+        <CheckBox
+            android:text="@string/thursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thu_checkbox"
+            android:layout_alignBaseline="@+id/thu_text_start"
+            android:layout_alignBottom="@+id/thu_text_start"
+            android:layout_alignLeft="@+id/wed_checkbox"
+            android:layout_alignStart="@+id/wed_checkbox"
+            />
+
+        <CheckBox
+            android:text="@string/wednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wed_checkbox"
+            android:layout_alignBaseline="@+id/wed_text_start"
+            android:layout_alignBottom="@+id/wed_text_start"
+            android:layout_alignLeft="@+id/tue_checkbox"
+            android:layout_alignStart="@+id/tue_checkbox"
+            />
+
+        <Button
+            android:text="@string/insert_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/insert_course_button"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/fri_checkbox"
+            android:layout_below="@+id/sun_checkbox" />
+
+        <CheckBox
+            android:text="@string/sunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sun_checkbox"
+            android:layout_alignBottom="@+id/sun_text_start"
+            android:layout_alignLeft="@+id/sat_checkbox"
+            android:layout_alignStart="@+id/sat_checkbox" />
+
+        <CheckBox
+            android:text="@string/saturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sat_checkbox"
+            android:layout_above="@+id/sun_text_start"
+            android:layout_alignLeft="@+id/fri_checkbox"
+            android:layout_alignStart="@+id/fri_checkbox" />
+
+        <Button
+            android:text="@string/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/clear_button" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:ems="4"
+            android:hint="@string/time_end"
+            android:id="@+id/mon_text_end"
+            android:layout_above="@+id/tue_checkbox"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:ems="4"
+            android:hint="@string/time_end"
+            android:id="@+id/tue_text_end"
+            android:layout_below="@+id/mon_text_end"
+            android:layout_alignLeft="@+id/mon_text_end"
+            android:layout_alignStart="@+id/mon_text_end" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:ems="4"
+            android:hint = "@string/time_start"
+            android:id="@+id/tue_text_start"
+            android:layout_alignBottom="@+id/tue_checkbox"
+            android:layout_alignLeft="@+id/mon_text_start"
+            android:layout_alignStart="@+id/mon_text_start" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:ems="4"
+            android:hint = "@string/time_start"
+            android:id="@+id/mon_text_start"
+            android:layout_alignBaseline="@+id/mon_checkbox"
+            android:layout_alignBottom="@+id/mon_checkbox"
+            android:layout_toLeftOf="@+id/mon_text_end"
+            android:layout_toStartOf="@+id/mon_text_end"
+            android:layout_marginRight="28dp"
+            android:layout_marginEnd="28dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:ems="4"
+            android:id="@+id/sun_text_start"
+            android:hint = "@string/time_start"
+            android:layout_below="@+id/sat_text_start"
+            android:layout_alignLeft="@+id/tue_text_start"
+            android:layout_alignStart="@+id/tue_text_start" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:ems="4"
+            android:id="@+id/sat_text_start"
+            android:hint = "@string/time_start"
+            android:layout_below="@+id/fri_text_start"
+            android:layout_alignLeft="@+id/sun_text_start"
+            android:layout_alignStart="@+id/sun_text_start" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:ems="4"
+            android:id="@+id/fri_text_start"
+            android:hint = "@string/time_start"
+            android:layout_below="@+id/thu_text_start"
+            android:layout_alignLeft="@+id/sat_text_start"
+            android:layout_alignStart="@+id/sat_text_start" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:ems="4"
+            android:hint = "@string/time_start"
+            android:id="@+id/thu_text_start"
+            android:layout_below="@+id/wed_text_start"
+            android:layout_alignLeft="@+id/fri_text_start"
+            android:layout_alignStart="@+id/fri_text_start" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:ems="4"
+            android:hint = "@string/time_start"
+            android:id="@+id/wed_text_start"
+            android:layout_below="@+id/tue_text_start"
+            android:layout_alignLeft="@+id/tue_text_start"
+            android:layout_alignStart="@+id/tue_text_start" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:ems="4"
+            android:hint="@string/time_end"
+            android:id="@+id/wed_text_end"
+            android:layout_alignBaseline="@+id/wed_text_start"
+            android:layout_alignBottom="@+id/wed_text_start"
+            android:layout_alignLeft="@+id/tue_text_end"
+            android:layout_alignStart="@+id/tue_text_end" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:ems="4"
+            android:hint="@string/time_end"
+            android:id="@+id/sat_text_end"
+            android:layout_below="@+id/fri_text_end"
+            android:layout_alignLeft="@+id/fri_text_end"
+            android:layout_alignStart="@+id/fri_text_end" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:ems="4"
+            android:hint="@string/time_end"
+            android:id="@+id/sun_text_end"
+            android:layout_below="@+id/sat_text_end"
+            android:layout_alignLeft="@+id/sat_text_end"
+            android:layout_alignStart="@+id/sat_text_end" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:ems="4"
+            android:hint="@string/time_end"
+            android:id="@+id/thu_text_end"
+            android:layout_below="@+id/wed_text_end"
+            android:layout_alignLeft="@+id/wed_text_end"
+            android:layout_alignStart="@+id/wed_text_end" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:ems="4"
+            android:hint="@string/time_end"
+            android:id="@+id/fri_text_end"
+            android:layout_alignBottom="@+id/fri_checkbox"
+            android:layout_alignLeft="@+id/thu_text_end"
+            android:layout_alignStart="@+id/thu_text_end"
+            android:layout_below="@+id/thu_text_end" />
+    </RelativeLayout>
+</ScrollView>
